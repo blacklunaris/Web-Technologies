@@ -1,0 +1,87 @@
+body{
+    font-family: sans-serif;
+    background-color: black;
+    background-size: cover;
+    background-image: url("cyberguts.png") ;
+    background-attachment: fixed;
+  
+  }
+  nav{
+      background-color:rgb(56, 55, 54);
+      position: relative;
+      
+      
+  }
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position:-webkit-sticky;/*Safari*/
+    position: sticky;/*makes nav bar stick with scroll*/
+}
+nav li{
+    float: left;
+}
+  nav li a{
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 1px solid;
+    color: #000;
+    
+
+  }
+ nav li a:hover{
+     background-color:black;
+     color: aliceblue;
+
+ }
+ .active{
+
+    background-color: #4CAF50;
+
+ }
+ @media screen and (max-width: 600px){
+     nav ul{float: none;}
+ }
+ /*div {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-image: url(spiritedaway.jpg);
+    transition: width 2s, height 4s;
+  }
+  
+  div:hover {
+    width: 300px;
+    height: 300px;
+  }*/
+
+
+  div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+    
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  footer{
+      position: absolute;
+  }
+ 
