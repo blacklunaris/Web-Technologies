@@ -44,20 +44,33 @@ body{
 
 
 }
-.login-box h1{
-  float: left;
-  font-size: 30px;
-  border-bottom: 2px solid;
-
-}
 .textbox{
-  padding-top: 10px;
+  padding:5px ;
 
 }
-.btn{
+.login-box h2{
+  float: left;
+  font-size: 25px;
+  border-bottom: 2px solid;
+  
+
+}
+
+button{
   padding: 10px;
+  font-size: 14px;
+  background: linear-gradient(skyblue 5%, grey 100%);
+  border: 1px solid #e5a900;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  outline:none;
 
 
+}
+button:hover{
+  background: linear-gradient(#ffdd7f 5%,#ffbc00 100%);
 }
 @media all and (min-width: 768px) {
   .navbar-fixed-width {
@@ -83,3 +96,4 @@ body{
     margin-right:auto;
   }
 }
+
