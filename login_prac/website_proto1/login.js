@@ -21,7 +21,7 @@ function validate(){
     }
 }
 function register(){
-    alert("Please enter your credentials.");
+    
     window.location="register.html";
 }
 

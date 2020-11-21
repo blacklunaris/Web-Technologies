@@ -44,22 +44,26 @@ body{
 
 
 }
-.textbox{
-  padding:5px ;
 
+.textbox{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
 }
 .login-box h2{
-  float: left;
+
   font-size: 25px;
-  border-bottom: 2px solid;
+ 
   
 
+}
+label{
+  
 }
 
 button{
   padding: 10px;
   font-size: 14px;
-  background: linear-gradient(skyblue 5%, grey 100%);
+  background: linear-gradient(skyblue 5%,blue 100%);
   border: 1px solid #e5a900;
   color: black;
   font-weight: bold;
