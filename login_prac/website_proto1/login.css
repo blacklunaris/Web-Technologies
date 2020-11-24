@@ -1,10 +1,12 @@
 
 body{
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   background-color: black;
   background-size: cover;
-  background-image: url("cyberguts.png") ;
+  background-image: url("galaxyman.png") ;
   background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
 
 }
 
@@ -29,9 +31,14 @@ body{
 .container:before{
   background: inherit;
 }
+.container{
+  display: flex;
+  flex-direction: column;
+
+}
 .login-box{
   width:200px;
-  border:double black;
+  border:solid rgb(32, 34, 34);
   border-radius: 1px;
   padding-left: 45px;
   padding-bottom: 30px;
@@ -39,15 +46,17 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  color: black;
-
-
+  background-color: rgb(41, 40, 40);
+  border-radius: 1em;
+  box-shadow: 10px 5px 5px;
 
 }
+
 
 .textbox{
   padding-top: .5rem;
   padding-bottom: .5rem;
+  
 }
 .login-box h2{
 
@@ -56,26 +65,52 @@ body{
   
 
 }
-label{
-  
+.active{
+  color:teal;
+  border-bottom:2px solid teal;
+  float: left;
 }
 
 button{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
   padding: 10px;
   font-size: 14px;
-  background: linear-gradient(skyblue 5%,blue 100%);
-  border: 1px solid #e5a900;
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 5px;
-  outline:none;
+  background:teal;
+  text-align: center;
+  transition: all 0.2s;
+  /*border: 1px solid #020202;*/
+  color: rgb(0, 0, 0);
+  border-radius: 2em;
+  border: none;
+  width: 100px;
+  margin-bottom: 2px;
+ 
+  
 
-
+  
 }
+input{
+  font-family: 'Montserrat', sans-serif;
+  background-color:rgb(151, 148, 148) ;
+  border-radius: 2em;
+  height: 25px;
+  border: none;
+  margin-bottom: 10px;
+  
+  
+}
+
 button:hover{
-  background: linear-gradient(#ffdd7f 5%,#ffbc00 100%);
+  background:rgb(0, 95, 95);
 }
+@media all and (max-width:30em){
+  button{
+    display: block;
+    margin: 0.4em;
+  }
+}
+
 @media all and (min-width: 768px) {
   .navbar-fixed-width {
     width: 768px;
@@ -83,6 +118,8 @@ button:hover{
     margin-right:auto;
  }
 }
+
+
 
 @media all and (min-width: 992px) {
   .navbar-fixed-width {

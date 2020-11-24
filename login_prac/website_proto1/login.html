@@ -7,6 +7,8 @@
     <title>Practice</title>
     <!--<script type="text/javascript" src="index.js"></script>-->
     <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script type="text/javascript" src="login.js"></script>
 
   </head>
@@ -14,7 +16,7 @@
     <div class="container">
         <div class="login-box">
           <form  id=form_id action="config.php" method="POST">
-            <h2>Login</h2>
+            <h2 class="active">Login</h2>
             <div class="textbox">
               <input type="text" id="username" placeholder="Username" name="" value="">
             </div>
@@ -25,8 +27,7 @@
               <button type="button" onclick="validate()" id="login" name="button">Sign In</button>
               <button type="button" onclick="register()" name="button">Register</button>
             </div>
-            <p>Dont have an account?<a
-            href="register.php">Sign up now</a>.</p>
+
           </form>
 
 
