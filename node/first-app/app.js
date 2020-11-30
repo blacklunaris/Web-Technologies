@@ -1,3 +1,5 @@
 //console.log;global
-const logger =require('./logger');
-logger.log('message');
+const path =require('path');
+
+let pathObj=path.parse(__filename);
+console.log(pathObj);
