@@ -1,5 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
+import "./login.css"
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from "react-router-dom";
+import Auth0ProviderWithHistory from "./auth/auth0-provider-with-history";
+import "./index.css"
+
+
 //arrow function examples
 
 /*
@@ -23,21 +29,22 @@ hello= val =>"Hello" + val;
 const myfirstelement = <h1>Hello React!</h1>
 
 ReactDOM.render(myfirstelement, document.getElementById('root'));*/
+/*
+const myelement=(
+  <div>
+    <h1> I am a Header.</h1>
+    <h1>I am a Header too.</h1>  
+  </div>
+);
 
-class Header {
-  constructor(){
-    this.color = "Red";
-  }
+ReactDOM.render(myelement, document.getElementById('root'));
 
-  //regular function
-  changeColor = function(){
-    document.getElementById("demo").innerHTML += this;
-  }
-}
-
-myHeader= new Header ();
-//The window calls the function:
-window.addEventListener("load",myHeader.changeColor);
-
-// A button object calls the function:
-document.getElementById("btn").addEventListener("click", myHeader.changeColor);
+*/
+ReactDOM.render(
+  <Router>
+    <Auth0ProviderWithHistory>
+      <App />
+    </Auth0ProviderWithHistory>
+  </Router>,
+  document.getElementById("root")
+);
