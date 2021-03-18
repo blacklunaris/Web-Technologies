@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+
+{% block main %}
+<div class="">
+    <form method="POST" action ="/">
+        {{form.csrf_token}}
+        {{form.username.label}}
+        {{form.username(size=20)}}
+        {{form.pw_hash.label}}
+        {{form.pw_hash(size=20)}}
+    
+        <button type="submit">Login</button>
+    </form>
+</div>
+
+
+{% endblock %}
